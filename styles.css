@@ -1,0 +1,145 @@
+/* --- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--- 02 COLORS
+
+- Primary:
+- Tints:
+- Shades:
+- Accents:
+- Greys:
+#343a40
+
+--- 03 WHITESPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  accent-color: rgba(58, 158, 201, 0.614);
+}
+
+*:focus {
+  box-shadow: 0 0 0 0.6rem rgba(58, 158, 201);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(137, 134, 134, 0.3)
+    ),
+    url(img/code.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* CONTAINER & FORM*/
+.container {
+  max-width: 80rem;
+  margin: 4.8rem auto 0 auto;
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.form {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 9px;
+  box-shadow: 0 2px 5px rgba(252, 248, 248, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* TEXT */
+.heading-primary {
+  font-size: 4.4rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.description {
+  font-size: 2rem;
+}
+
+label,
+p {
+  font-size: 2rem;
+}
+
+input,
+select,
+textarea {
+  font-size: 1.8rem;
+  border-radius: 0.4rem;
+  background-color: rgba(58, 158, 201, 0.614);
+  border: none;
+}
+
+input,
+select {
+  padding: 0.8rem;
+  font-family: inherit;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+textarea {
+  font-family: inherit;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 12rem;
+  color: #fff;
+}
+
+.btn {
+  font-family: inherit;
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  box-shadow: inset 0 0 0 0.2rem rgba(58, 158, 201);
+}
+
+.btn:active {
+  opacity: 0.8;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 29em) {
+  html {
+    font-size: 56.25%;
+  }
+}
